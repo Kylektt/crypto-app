@@ -1,0 +1,172 @@
+.coin-container .content {
+    max-width: 740px;
+    margin: 1rem auto;
+    padding: .7rem 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #26272b;
+    box-shadow: 0px 0px 12px #18191b;
+    border-radius: 8px;
+}
+
+.rank {
+    margin: .5 0;
+}
+
+.rank-btn {
+    border: 1px solid #6900ff;
+    box-shadow: 0px 0px 8px #6900ff;
+    background-color: #6900ff;
+    border-radius: 8px;
+    padding: .2rem;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.info .coin-heading {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.info .coin-price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info p {
+    padding-right: 1rem;
+}
+
+table {
+    margin: .5rem 0;
+}
+
+td, th {
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #333;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    width: 100%;
+}
+
+.stats .row {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #808080;
+    margin: .6rem 0;
+    padding-bottom: .5rem;
+}
+
+.stats .row p:first-child {
+    color: #d3d3d3;
+}
+
+.about h3 {
+    margin: 1rem 0;
+}
+
+
+
+
+
+@media screen and (max-width: 700px) {
+    .coin-container .content {
+        max-width: 100%;
+        margin: .5rem;
+        padding: 0 .5rem;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    td,th {
+        padding: 3px;
+    }
+
+    .rank {
+        margin: .5rem;
+    }
+
+    .rank-btn {
+        margin: .5rem 0;
+    }
+}
+
+
+/* 先定义段落的基础样式 */
+.about-content  {
+  color: #fff;
+  background-color: #000;
+  border: 1px solid #f7931a;
+  padding: 20px;
+  border-radius: 4px;
+  font-family: 'Arial', sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+
+.about-content  a {
+  color: #f7931a;
+  text-decoration: none; 
+  background-image: linear-gradient(to right, #f7931a 0%, #f7931a 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 1px;
+  background-position: 0 100%;
+  transition: background-size 0.3s ease;
+}
+
+
+.about-content a:hover {
+  background-size: 100% 100%;
+  color: #fff;
+  border-radius: 4px;
+}
+
+
+@keyframes rainbow-color {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+.about-content  a:hover {
+  animation: rainbow-color 8s ease infinite;
+  background-image: linear-gradient(270deg, #f64f59, #c471ed, #12c2e9, #f64f59, #c471ed, #12c2e9);
+  background-size: 1800% 1800%;
+}
+
+.about-content{
+  color: #f7931a; /* 比特币的标志性橙色 */
+  background-color: #1a1a1a; /* 深色背景增加对比 */
+  border: 1px solid #f7931a; /* 橙色边框 */
+  padding: 15px;
+  border-radius: 10px; /* 圆角边框 */
+  font-family: 'Arial', sans-serif; /* 现代字体 */
+  font-size: 16px;
+  line-height: 2; /* 行间距 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* 箱体阴影增加深度 */
+  text-align: justify; /* 文本对齐 */
+  transition: all 0.3s ease; /* 平滑过渡效果 */
+}
+
+.about-content:hover {
+  color: #ffffff;
+  background-color: #333333;
+  border-color: #ffffff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.8);
+}
