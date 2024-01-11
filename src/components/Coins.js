@@ -27,6 +27,14 @@ const Coins = (props) => {
             )
           })}
 
+          {/* {props.coins.map(coins => {
+            return (
+              <Link to={`/coin/${coins.id}`} key={coins.id}>
+                <CoinItem coins={coins} />
+              </Link>
+            )
+          })} */}
+
         </div>
     </div>
   )
